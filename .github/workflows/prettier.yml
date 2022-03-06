@@ -1,0 +1,22 @@
+name: Prettier
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - name: Prettier Action
+        uses: creyD/prettier_action@v4.2
+        with:
+          commit_message: Formatted code with Prettier
+          prettier_options: -write --config ./.prettierrc --ignore-path ./.prettierignore .
+          continue-on-error: true

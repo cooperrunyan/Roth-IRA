@@ -1,0 +1,26 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-family;
+  color: $black;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+::selection {
+  background-color: $black;
+  color: $white;
+}
