@@ -1,7 +1,8 @@
 {
-  "name": "react-app",
+  "name": "roth-ira",
   "version": "0.0.0",
   "license": "EPL-2.0",
+  "private": true,
   "author": "Cooper Runyan",
   "scripts": {
     "dev": "vite --host",

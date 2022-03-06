@@ -1,9 +1,9 @@
-import { Banner } from '~/components/Banner';
+import { Calculator, Container } from './components';
 
 export function App() {
   return (
-    <>
-      <Banner>{{ title: 'Hello world' }}</Banner>
-    </>
+    <Container>
+      <Calculator />
+    </Container>
   );
 }
